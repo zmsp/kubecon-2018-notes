@@ -13,6 +13,8 @@
 
 * QOS: BestEffort
 * QOS: burst effect: upper bound (limit), lower bound (request). Together Creates a bursty effect.
+* QoS: class of Guaranteed
+* QOS covered here https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/
 
 * Over allocation tricky: becomes a problem when scaling up replica. Effect multiplier by replica number.
 * Ideal resource allocation: little over allocation. NO under allocation.
