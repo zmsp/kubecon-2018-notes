@@ -1,15 +1,15 @@
 # Getting The Most Out Of Kubernetes with Resource Limits and Load Testing - Harrison Harnisch, Buffer
 
 * Tools used for load Testing
- - loader.io
- - kubescope
+   - loader.io
+   - kubescope
 * scaling Tools
- - prometheus
- - azure metrics
- - horizontal pod scaling
- - vertical pod autoscaler (vpa)
- - datadog
- - kubescope cli
+   - prometheus
+   - azure metrics
+   - horizontal pod scaling
+   - vertical pod autoscaler (vpa)
+   - datadog
+   - kubescope cli
 
 * QOS: BestEffort
 * QOS: burst effect: upper bound (limit), lower bound (request). Together Creates a bursty effect.
@@ -21,8 +21,8 @@
 
 * Setting limits/requests ... https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 * Testing strategy:
-  - traffic: Start from 0 traffic and up traffic until crashes. (loader.io, kubescope was used to test etcd)
-  - duration: run the pod and see the consumed resources over time.
-  - look into fail logs
+    - traffic: Start from 0 traffic and up traffic until crashes. (loader.io, kubescope was used to test etcd)
+    - duration: run the pod and see the consumed resources over time.
+    - look into fail logs
 * lesson learned:
-  - keep a fail log
+    - keep a fail log
